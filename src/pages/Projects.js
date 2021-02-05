@@ -17,7 +17,7 @@ export default function Projects() {
 								}}
 							></p>
 							<img
-								className="w-full h-64 mt-5 object-cover rounded-t"
+								className="w-full h-64 mt-5 object-cover"
 								src={project.splash_img}
 								alt="Project Screenshot"
 							/>
