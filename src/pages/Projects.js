@@ -24,9 +24,17 @@ export default function Projects() {
 							<ul className="mt-4 list-disc list-inside">
 								{/* Languages */}
 								<li>
-									Languages / Frameworks:{" "}
-									{project.languages.join(", ")}
+									Languages: {project.languages.join(", ")}
 								</li>
+								{/* Frameworks and Libraries */}
+								<li>
+									Frameworks and Libraries:{" "}
+									{project.frameworks_and_libraries.join(
+										", "
+									)}
+								</li>
+								{/* Tools */}
+								<li>Tools: {project.tools.join(", ")}</li>
 								{/* Links */}
 								{project.links.map((link, index) => (
 									<li key={index}>

@@ -3,7 +3,13 @@ export const projects = [
 		title: "Bookmarks",
 		description: "A fullstack website for managing bookmarks.",
 		splash_img: "images/Bookmarks.png",
-		languages: ["React", "Django Rest Framework"],
+		languages: ["HTML", "CSS", "Javascript", "Python"],
+		frameworks_and_libraries: [
+			"React",
+			"Django Rest Framework",
+			"Tailwind CSS",
+		],
+		tools: ["Git", "Nginx", "VPS"],
 		links: [
 			{
 				text: "Deployed Website",
@@ -17,6 +23,8 @@ export const projects = [
 			"A game / rendering engine. This project is not implemented completely on my own, but instead it is my own version of a game engine based on the <a href='https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT'>tutorial series</a> of the <a href='https://github.com/TheCherno/Hazel'>Hazel Engine</a>.",
 		splash_img: "images/OrangeEngine.png",
 		languages: ["C++"],
+		frameworks_and_libraries: ["OpenGL", "Dear ImGui", "Entt"],
+		tools: ["Git", "Premake"],
 		links: [
 			{
 				text: "Source Code",
@@ -28,7 +36,9 @@ export const projects = [
 		title: "Music Player",
 		description: "A music player for Windows with basic functionality.",
 		splash_img: "images/MusicPlayer.png",
-		languages: ["C++", "Qt"],
+		languages: ["C++"],
+		frameworks_and_libraries: ["Qt"],
+		tools: ["Git"],
 		links: [],
 	},
 ];
