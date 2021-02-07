@@ -41,4 +41,19 @@ export const projects = [
 		tools: ["Git"],
 		links: [],
 	},
+	{
+		title: "Diagram Tool",
+		description:
+			"A Tool to create diagrams for papers / printed publications with a predefined style.",
+		splash_img: "images/DiagramTool.png",
+		languages: ["Python"],
+		frameworks_and_libraries: ["PyQt", "Matplotlib"],
+		tools: ["Git"],
+		links: [
+			{
+				text: "Source Code",
+				href: "https://github.com/christianwaldmann/DiagramTool",
+			},
+		],
+	},
 ];
