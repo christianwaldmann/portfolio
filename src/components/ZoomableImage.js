@@ -5,8 +5,8 @@ import "react-medium-image-zoom/dist/styles.css";
 export default function ZoomableImage(props) {
 	return (
 		<Zoom overlayBgColorEnd="hsl(0, 0%, 0%, 0.95)">
-			<img alt="Image" {...props} />
-			{/* alt prop must be set here, even though we want to overrite it via props, else there's a warning */}
+			<img alt={props.alt} {...props} />
+			{/* alt prop must be set here explicitly, else there's a warning */}
 		</Zoom>
 	);
 }
