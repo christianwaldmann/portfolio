@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
+import ZoomableImage from "../components/ZoomableImage";
 import { projects } from "../config/projects";
 
 export default function Projects() {
@@ -16,7 +17,7 @@ export default function Projects() {
 									__html: project.description,
 								}}
 							></p>
-							<img
+							<ZoomableImage
 								className="w-full mt-5 object-cover"
 								src={project.splash_img}
 								alt="Project Screenshot"
