@@ -44,7 +44,7 @@ export const projects = [
 	{
 		title: "Diagram Tool",
 		description:
-			"A Tool to create diagrams for papers / printed publications with a predefined style.",
+			"A tool to create diagrams for papers / printed publications with a predefined style.",
 		splash_img: "images/DiagramTool.png",
 		languages: ["Python"],
 		frameworks_and_libraries: ["PyQt", "Matplotlib"],
