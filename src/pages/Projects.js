@@ -13,12 +13,13 @@ export default function Projects() {
 						<div key={index}>
 							<Header>{project.title}</Header>
 							<p
+								className="mb-5"
 								dangerouslySetInnerHTML={{
 									__html: project.description,
 								}}
 							></p>
 							<ZoomableImage
-								className="w-full mt-5 object-cover"
+								className="w-full object-cover"
 								src={project.splash_img}
 								alt="Project Screenshot"
 							/>
