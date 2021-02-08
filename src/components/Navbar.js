@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
-		<nav className="w-full sm:w-72 sm:h-screen sm:fixed pb-6 sm:pb-0 px-6 pt-12 bg-black overflow-y-auto">
+		<nav className="w-full md:w-72 md:h-screen md:fixed pb-6 md:pb-0 px-6 pt-12 bg-black overflow-y-auto">
 			<NavbarHeader />
 			<NavbarSeparator />
 			<NavbarItem title="Home" to="home" />

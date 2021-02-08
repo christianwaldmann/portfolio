@@ -7,8 +7,8 @@ export default function Projects() {
 	return (
 		<div>
 			<Navbar />
-			<div className="sm:ml-72 px-6 flex flex-row text-gray-800">
-				<div className="w-192">
+			<div className="md:ml-72 px-6 flex flex-row text-gray-800">
+				<div className="w-248">
 					{projects.map((project, index) => (
 						<div key={index}>
 							<Header>{project.title}</Header>

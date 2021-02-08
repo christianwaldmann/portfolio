@@ -6,8 +6,8 @@ export default function Home() {
 	return (
 		<div>
 			<Navbar />
-			<div className="sm:ml-72 px-6 flex flex-row text-gray-800">
-				<div className="w-192">
+			<div className="md:ml-72 px-6 flex flex-row text-gray-800">
+				<div className="w-248">
 					<Header>Welcome</Header>
 					<div className="-mb-3" />
 					{welcome_paragraphs.map((welcome_paragraph, index) => (
