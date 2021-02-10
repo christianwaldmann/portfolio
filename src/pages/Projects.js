@@ -22,14 +22,20 @@ export default function Projects() {
 					/>
 					<ul className="mt-4 mb-16 list-disc list-inside">
 						{/* Languages */}
-						<li>Languages: {project.languages.join(", ")}</li>
+						<li>
+							<b>Languages: </b>
+							{project.languages.join(", ")}
+						</li>
 						{/* Frameworks and Libraries */}
 						<li>
-							Frameworks and Libraries:{" "}
+							<b>Frameworks and Libraries: </b>
 							{project.frameworks_and_libraries.join(", ")}
 						</li>
 						{/* Tools */}
-						<li>Tools: {project.tools.join(", ")}</li>
+						<li>
+							<b>Tools: </b>
+							{project.tools.join(", ")}
+						</li>
 						{/* Links */}
 						{project.links.map((link, index) => (
 							<li key={index}>
