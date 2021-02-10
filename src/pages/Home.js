@@ -6,11 +6,11 @@ export default function Home() {
 	return (
 		<Base>
 			<Header>Welcome</Header>
-			<div className="-mb-3" />
+			<div className="-mb-4" />
 			{welcome_paragraphs.map((welcome_paragraph, index) => (
 				<p
 					key={index}
-					className="pt-3"
+					className="pt-4"
 					dangerouslySetInnerHTML={{
 						__html: welcome_paragraph,
 					}}
