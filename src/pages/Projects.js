@@ -20,7 +20,7 @@ export default function Projects() {
 						src={project.splash_img}
 						alt="Project Screenshot"
 					/>
-					<ul className="mt-4 list-disc list-inside">
+					<ul className="mt-4 mb-16 list-disc list-inside">
 						{/* Languages */}
 						<li>Languages: {project.languages.join(", ")}</li>
 						{/* Frameworks and Libraries */}
@@ -37,7 +37,6 @@ export default function Projects() {
 							</li>
 						))}
 					</ul>
-					<div className="mb-16" />
 				</>
 			))}
 		</Base>
