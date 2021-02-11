@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		title: "Bookmarks",
-		description: "A fullstack website for managing bookmarks.",
+		description: "A fullstack web application for managing bookmarks.",
 		splash_img: "images/Bookmarks.png",
 		languages: ["HTML", "CSS", "Javascript", "Python"],
 		frameworks_and_libraries: [
