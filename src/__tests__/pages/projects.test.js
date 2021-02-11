@@ -12,7 +12,7 @@ test("renders the homepage", () => {
 	expect(getByText("Christian Waldmann")).toBeTruthy();
 	expect(getByText("Bookmarks")).toBeTruthy();
 	expect(
-		getByText("A fullstack website for managing bookmarks.")
+		getByText("A fullstack web application for managing bookmarks.")
 	).toBeTruthy();
 	expect(getByText("Deployed Website")).toBeTruthy();
 });
