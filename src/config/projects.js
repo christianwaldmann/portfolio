@@ -18,6 +18,20 @@ export const projects = [
 		],
 	},
 	{
+		title: "Homepage",
+		description: "This website. A way to display some projects of mine.",
+		splash_img: "images/Homepage.png",
+		languages: ["HTML", "CSS", "Javascript"],
+		frameworks_and_libraries: ["React", "Tailwind CSS"],
+		tools: ["Git", "GitHub Pages", "Travis CI"],
+		links: [
+			{
+				text: "Source Code",
+				href: "https://github.com/christianwaldmann/portfolio",
+			},
+		],
+	},
+	{
 		title: "Orange Engine",
 		description:
 			"A game / rendering engine. This project is not implemented completely on my own, but instead it is my own version of a game engine based on the <a href='https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT'>tutorial series</a> of the <a href='https://github.com/TheCherno/Hazel'>Hazel Engine</a>.",
