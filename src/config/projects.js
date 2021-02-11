@@ -13,7 +13,7 @@ export const projects = [
 		links: [
 			{
 				text: "Deployed Website",
-				href: "http://bookmarks.doow.xyz/",
+				href: "https://bookmarks.doow.xyz/",
 			},
 		],
 	},
