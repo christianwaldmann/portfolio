@@ -1,9 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
-export default function Header(props) {
+export default function Header() {
 	return (
-		<h2 className="pt-8 pb-1 mb-5 text-gray-900 text-3xl font-bold border-b">
-			{props.children}
-		</h2>
+		<div className="h-16 flex items-center px-5">
+			<Link
+				className="text-gray-800 dark:text-gray-400 text-2xl font-bold hover:no-underline"
+				to=""
+			>
+				Christian Waldmann
+			</Link>
+			<ThemeToggle className="ml-auto" />
+		</div>
 	);
 }
