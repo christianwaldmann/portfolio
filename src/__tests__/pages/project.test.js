@@ -1,8 +1,23 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Home from "../../pages/Home";
 import { BrowserRouter } from "react-router-dom";
+import Project from "../../pages/Project";
 import { ThemeProvider } from "../../context/Theme";
+
+let project = {
+	title: "Homepage",
+	description: "This website. A way to display some projects of mine.",
+	splash_img: "images/Homepage.png",
+	languages: ["HTML", "CSS", "Javascript"],
+	frameworks_and_libraries: ["React", "Tailwind CSS"],
+	tools: ["Git", "GitHub Pages", "Travis CI"],
+	links: [
+		{
+			text: "Source Code",
+			href: "https://github.com/christianwaldmann/portfolio",
+		},
+	],
+};
 
 test("renders the homepage", () => {
 	Object.defineProperty(window, "matchMedia", {
@@ -21,16 +36,14 @@ test("renders the homepage", () => {
 	const { getByText } = render(
 		<BrowserRouter>
 			<ThemeProvider>
-				<Home />
+				<Project project={project} />
 			</ThemeProvider>
 		</BrowserRouter>
 	);
 	expect(getByText("Christian Waldmann")).toBeTruthy();
+	expect(getByText("Homepage")).toBeTruthy();
 	expect(
-		getByText(
-			"I'm Christian, a student at Kempten University of applied Sciences doing my Masters Degree in Computer Science."
-		)
+		getByText("This website. A way to display some projects of mine.")
 	).toBeTruthy();
-	expect(getByText("Email")).toBeTruthy();
-	expect(getByText("Github")).toBeTruthy();
+	expect(getByText("Source Code")).toBeTruthy();
 });
