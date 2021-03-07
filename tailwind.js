@@ -784,7 +784,7 @@ module.exports = {
 		divideOpacity: ["responsive"],
 		divideStyle: ["responsive"],
 		divideWidth: ["responsive"],
-		fill: ["responsive"],
+		fill: ["responsive", "hover", "group-hover"],
 		flex: ["responsive"],
 		flexDirection: ["responsive"],
 		flexGrow: ["responsive"],

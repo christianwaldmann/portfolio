@@ -577,6 +577,14 @@ video {
   height: auto;
 }
 
+a {
+  color: #3182ce;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   width: 100%;
 }
@@ -20343,6 +20351,14 @@ video {
 }
 
 .fill-current {
+  fill: currentColor;
+}
+
+.hover\:fill-current:hover {
+  fill: currentColor;
+}
+
+.group:hover .group-hover\:fill-current {
   fill: currentColor;
 }
 
@@ -47676,6 +47692,14 @@ video {
     fill: currentColor;
   }
 
+  .sm\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .group:hover .sm\:group-hover\:fill-current {
+    fill: currentColor;
+  }
+
   .sm\:stroke-current {
     stroke: currentColor;
   }
@@ -74973,6 +74997,14 @@ video {
   }
 
   .md\:fill-current {
+    fill: currentColor;
+  }
+
+  .md\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .group:hover .md\:group-hover\:fill-current {
     fill: currentColor;
   }
 
@@ -102276,6 +102308,14 @@ video {
     fill: currentColor;
   }
 
+  .lg\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .group:hover .lg\:group-hover\:fill-current {
+    fill: currentColor;
+  }
+
   .lg\:stroke-current {
     stroke: currentColor;
   }
@@ -129573,6 +129613,14 @@ video {
   }
 
   .xl\:fill-current {
+    fill: currentColor;
+  }
+
+  .xl\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .group:hover .xl\:group-hover\:fill-current {
     fill: currentColor;
   }
 

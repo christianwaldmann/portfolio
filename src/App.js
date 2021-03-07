@@ -5,7 +5,6 @@ import Error404NotFound from "./pages/Error404NotFound";
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "./context/Theme";
 import { projects } from "./config/projects";
-import "./styles.css";
 
 export default function App() {
 	return (

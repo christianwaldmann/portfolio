@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+	a {
+		color: #3182ce;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
