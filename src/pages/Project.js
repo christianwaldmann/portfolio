@@ -2,8 +2,20 @@ import Base from "./Base";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import ZoomableImage from "../components/ZoomableImage";
+import { useState, useEffect } from "react";
 
 export default function Project({ project }) {
+	const [isLoading, setIsLoading] = useState(true);
+
+	// Preload image
+	useEffect(() => {
+		const img = new Image();
+		img.src = project.splash_img;
+		img.onload = () => {
+			setIsLoading(false);
+		};
+	}, [project.splash_img]);
+
 	let links_section =
 		project.links.length !== 0 ? (
 			<div className="mb-16">
@@ -30,38 +42,45 @@ export default function Project({ project }) {
 					__html: project.description,
 				}}
 			/>
-			<ZoomableImage
-				className="w-full object-cover"
-				src={project.splash_img}
-				alt="Project Screenshot"
-			/>
-			<div className="text-base">
-				{links_section}
-				<H2>Technology used</H2>
-				<h3 className="mt-1 mb-2 font-bold">Languages</h3>
-				<ul className="list-disc list-inside">
-					{project.languages.map((language, index) => (
-						<li key={index}>{language}</li>
-					))}
-				</ul>
-				<h3 className="mt-4 mb-2 font-bold">
-					Frameworks and Libraries
-				</h3>
-				<ul className="list-disc list-inside">
-					{project.frameworks_and_libraries.map(
-						(framework_and_library, index) => (
-							<li key={index}>{framework_and_library}</li>
-						)
-					)}
-				</ul>
-				<h3 className="mt-4 mb-2 font-bold">Tools</h3>
-				<ul className="list-disc list-inside">
-					{project.tools.map((tool, index) => (
-						<li key={index}>{tool}</li>
-					))}
-				</ul>
-				<div className="mb-12" />
-			</div>
+			{/* Show image and everything below only after loading is finished. Everything below is included here, because else it would cause the content to shift. */}
+			{isLoading ? (
+				<div />
+			) : (
+				<>
+					<ZoomableImage
+						className="w-full object-cover"
+						src={project.splash_img}
+						alt="Project Screenshot"
+					/>
+					<div className="text-base">
+						{links_section}
+						<H2>Technology used</H2>
+						<h3 className="mt-1 mb-2 font-bold">Languages</h3>
+						<ul className="list-disc list-inside">
+							{project.languages.map((language, index) => (
+								<li key={index}>{language}</li>
+							))}
+						</ul>
+						<h3 className="mt-4 mb-2 font-bold">
+							Frameworks and Libraries
+						</h3>
+						<ul className="list-disc list-inside">
+							{project.frameworks_and_libraries.map(
+								(framework_and_library, index) => (
+									<li key={index}>{framework_and_library}</li>
+								)
+							)}
+						</ul>
+						<h3 className="mt-4 mb-2 font-bold">Tools</h3>
+						<ul className="list-disc list-inside">
+							{project.tools.map((tool, index) => (
+								<li key={index}>{tool}</li>
+							))}
+						</ul>
+						<div className="mb-12" />
+					</div>
+				</>
+			)}
 		</Base>
 	);
 }
