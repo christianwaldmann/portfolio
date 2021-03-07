@@ -13,6 +13,10 @@ export default function App() {
 			<ScrollToTop />
 			<ThemeProvider>
 				<Helmet>
+					{/* Preload all images. This is fine to do here, because its only a few images and the combined size is relatively small (currently 0.2MB) */}
+					{projects.map((project) => (
+						<link rel="prefetch" href={project.splash_img} />
+					))}
 					<body className="bg-white dark:bg-gray-900"></body>
 				</Helmet>
 				<Switch>
