@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, waitFor, mount } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import Project from "../../pages/Project";
 import { ThemeProvider } from "../../context/Theme";
@@ -19,7 +19,7 @@ let project = {
 	],
 };
 
-test("renders the homepage", () => {
+test("renders the project homepage", () => {
 	Object.defineProperty(window, "matchMedia", {
 		writable: true,
 		value: jest.fn().mockImplementation((query) => ({
@@ -45,5 +45,6 @@ test("renders the homepage", () => {
 	expect(
 		getByText("This website. A way to display some projects of mine.")
 	).toBeTruthy();
-	expect(getByText("Source Code")).toBeTruthy();
+	// Check if conent below image is rendered
+	setTimeout(() => expect(getByText("Source Code")).toBeTruthy(), 5000); // Needs time because it renders only after image load
 });
