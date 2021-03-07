@@ -1,5 +1,5 @@
 import React from "react";
-import { render, waitFor, mount } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import Project from "../../pages/Project";
 import { ThemeProvider } from "../../context/Theme";

@@ -2,7 +2,6 @@ import Base from "./Base";
 import H1 from "../components/H1";
 import H2 from "../components/H2";
 import ZoomableImage from "../components/ZoomableImage";
-import { useState, useEffect } from "react";
 
 export default function Project({ project }) {
 	let links_section =
