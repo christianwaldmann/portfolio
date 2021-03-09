@@ -9,7 +9,7 @@ export default function Base({ children }) {
 				</div>
 			</div>
 			<div className="container mx-auto">
-				<div className="px-6 flex flex-row sm:text-lg text-gray-700 dark:text-gray-500">
+				<div className="px-6 flex flex-row sm:text-lg text-gray-800 dark:text-gray-450">
 					<div className="w-192 mx-auto">{children}</div>
 				</div>
 			</div>

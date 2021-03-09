@@ -31,28 +31,24 @@ export default function Home() {
 			</ul>
 			<H1>Projects</H1>
 			{projects.map((project, index) => (
-				<Link
-					to={
-						"/projects/" +
-						project.title.toLowerCase().replace(" ", "-")
-					}
-					className="hover:no-underline"
+				<div
+					className="my-6 px-6 py-4 bg-gray-130 dark:bg-gray-850 rounded-lg text-base text-gray-800 dark:text-gray-450"
 					key={index}
 				>
-					<div className="my-6 px-6 py-4 bg-gray-100 dark:bg-gray-850 rounded-lg text-sm text-gray-600 dark:text-gray-500">
-						<h2 className="mb-2 text-xl font-bold text-gray-800 dark:text-gray-400">
-							{project.title}
-						</h2>
-						<p>{project.description.replace(/<[^>]+>/g, "")}</p>
-						<div className="mt-2 font-light">
-							{/* Languages */}
-							{project.languages.join(", ")}
-							<div className="inline-block px-2">&#8226;</div>
-							{/* Frameworks and Libraries */}
-							{project.frameworks_and_libraries.join(", ")}
-						</div>
-					</div>
-				</Link>
+					<h2 className="mb-1 text-xl font-bold text-gray-800 dark:text-gray-400">
+						{project.title}
+					</h2>
+					<p>{project.description.replace(/<[^>]+>/g, "")}</p>
+					<Link
+						to={
+							"/projects/" +
+							project.title.toLowerCase().replace(" ", "-")
+						}
+						className="hover:no-underline"
+					>
+						<p className="mt-2 text-sm">More Information →</p>
+					</Link>
+				</div>
 			))}
 		</Base>
 	);
