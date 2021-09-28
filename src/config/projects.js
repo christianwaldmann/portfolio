@@ -1,5 +1,24 @@
 export const projects = [
 	{
+		title: "Geometrie Rechner",
+		description:
+			"A website for calculating properties of simple geometries.",
+		splash_img: "images/GeometrieRechner.png",
+		languages: ["HTML", "CSS", "Javascript"],
+		frameworks_and_libraries: ["React", "Tailwind CSS"],
+		tools: ["Git", "GitHub Pages", "Travis CI", "Netlify"],
+		links: [
+			{
+				text: "Source Code",
+				href: "https://github.com/christianwaldmann/geometrierechner",
+			},
+			{
+				text: "Deployed Website",
+				href: "https://www.geometrierechner.de/",
+			},
+		],
+	},
+	{
 		title: "Bookmarks",
 		description: "A fullstack web application for managing bookmarks.",
 		splash_img: "images/Bookmarks.png",
@@ -54,20 +73,5 @@ export const projects = [
 		frameworks_and_libraries: ["Qt"],
 		tools: ["Git"],
 		links: [],
-	},
-	{
-		title: "Diagram Tool",
-		description:
-			"A tool to create diagrams for papers / printed publications with a predefined style.",
-		splash_img: "images/DiagramTool.png",
-		languages: ["Python"],
-		frameworks_and_libraries: ["PyQt", "Matplotlib"],
-		tools: ["Git"],
-		links: [
-			{
-				text: "Source Code",
-				href: "https://github.com/christianwaldmann/DiagramTool",
-			},
-		],
 	},
 ];
